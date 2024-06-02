@@ -3,5 +3,5 @@
 ## Makefile
 `make` then `./main`
 
-And `make clean`
+`make clean`
 
