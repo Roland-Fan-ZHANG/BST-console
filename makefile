@@ -1,13 +1,13 @@
 CC=gcc
 CFLAGS=-std=c99 -Wall -Werror
 LDFLAGS=
-DEPS=visualtree.h tree.h
+DEPS=src/visualtree.h src/tree.h
 OBJ=visualtree.o tree.o
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
 
-tp08: tp08.o $(OBJ)
+main: main.o $(OBJ)
 	gcc -o $@ $^ $(LDFLAGS)
 
 .PHONY: clean
