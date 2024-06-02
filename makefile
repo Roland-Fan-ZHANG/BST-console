@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=-std=c99 -Wall -Werror
 LDFLAGS=
 DEPS=src/visualtree.h src/tree.h
-OBJ=visualtree.o tree.o
+OBJ=src/visualtree.o src/tree.o
 
 %.o: %.c $(DEPS)
 	$(CC) -c -o $@ $< $(CFLAGS)
