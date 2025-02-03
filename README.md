@@ -1,5 +1,3 @@
-# Quick setup
-
 ## Makefile
 `make` then `./main`
 
